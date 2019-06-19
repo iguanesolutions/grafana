@@ -83,3 +83,7 @@ func (s *FakeUserAuthTokenService) GetUserToken(ctx context.Context, userId, use
 func (s *FakeUserAuthTokenService) GetUserTokens(ctx context.Context, userId int64) ([]*models.UserToken, error) {
 	return s.GetUserTokensProvider(context.Background(), userId)
 }
+
+func (s *FakeUserAuthTokenService) BatchRevokeAllUserTokens(ctx context.Context, userIds []int64) error {
+	return nil
+}
