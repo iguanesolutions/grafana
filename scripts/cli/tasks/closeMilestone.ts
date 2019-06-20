@@ -64,7 +64,7 @@ const closeMilestoneTaskRunner: TaskRunner<CloseMilestoneOptions> = async ({ mil
     if (resDelete.status === 200) {
       process.stdout.write('done ✅\n');
     } else {
-      console.log('failed ❌\n');
+      console.log('failed ❌');
     }
   }
 
